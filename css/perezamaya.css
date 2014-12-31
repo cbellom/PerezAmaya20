@@ -1,0 +1,315 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.image-circle{
+  width: 150px;
+  height: 150px;
+  top: 60%;
+  border-radius: 50%;
+  border-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: Champagne;
+  font-weight: bold;
+}
+
+.circle-font{
+  color: #ffffff;
+  font-size: 20px;
+  padding-top:45px;
+  text-align: center;
+}
+
+.icon-header{
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.container-body{
+  margin: 10%;
+  height: 10%;
+  width: 100%;
+}
+
+.indexTitle{
+  color : #4d6b70;
+  text-align: center;
+  font-weight: bold;
+  font-family: Champagne;
+}
+
+.menu-button{
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  margin-bottom: 5px;
+  width: 70px;
+  height: 50px;
+  font-size: 0px;
+  font-family: Champagne;
+}
+
+.menu-button:hover{
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  margin-bottom: 5px;
+  width: 70px;
+  height: 80px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-info-who-page{
+  color: #7d7d7f;
+  text-align: justify;
+  font-size: 20px;
+  font-family: Champagne;
+}
+
+.text-subtitle-who-page{
+  color:#3e3e3f;
+  text-align: left;
+  font-size: 25px;
+  margin-top: 30px;
+  font-family: Champagne;
+  font-weight: bold;
+}
+
+.text-title{
+  color:#208554;
+  text-align: left;
+  font-size: 40px;
+  font-family: Champagne;
+  font-weight: bold;
+}
+
+.circle-1{
+  background-color: #208554;
+}
+
+.circle-1:hover{
+  background-color: #64bd92;
+  color: #ffffff;
+}
+
+.circle-2{
+  background-color: #cf233f;
+}
+
+.circle-2:hover{
+  background-color: #e86076;
+  color: #ffffff;
+}
+
+.circle-3{
+  background-color: #13baa9;
+}
+
+.circle-3:hover{
+  background-color: #5aecdd;
+  color: #ffffff;
+}
+
+.circle-4{
+  background-color: #4d6b70;
+}
+
+.circle-4:hover{
+  background-color: #90c7d0;
+  color: #ffffff;
+}
+
+.circle-5{
+  background-color: #e4b42c;
+}
+
+.circle-5:hover{
+  background-color: #e1c471;
+  color: #ffffff;
+}
+@font-face { font-family: Champagne; src: url('../fonts/Champagne%20&%20Limousines.ttf'); }
+
+@font-face { font-family: Champagne; font-weight: bold; src: url('../fonts/Champagne%20&%20Limousines%20Bold.ttf'); }
+
+/* 1st level */
+.nav label {
+  color: #848484;
+  font-size:15pt;
+  width: 300px;
+  font-family: Champagne;
+}
+
+/* 2nd level */
+.tree > li > label {
+  padding:10px 15px;
+  font-family: Champagne;
+}
+
+/* 3rd level */
+.tree > li > ul > li > a {
+  color:#848484;
+  font-size:15px;
+  margin-left:15px;
+  font-family: Champagne;
+}
+
+.background-radial-red {
+  background-position: center center;
+  background: radial-gradient(circle,#F5A9BC, #ffffff);
+}
+
+.background-radial-red:hover {
+  background-position: center center;
+  background: radial-gradient(circle,#FF55AA, #ffffff);
+}
+
+.background-radial-blue {
+  background-position: center center;
+  background: radial-gradient(circle,#CEE3F6, #ffffff);
+}
+
+.background-radial-blue:hover {
+  background-position: center center;
+  background: radial-gradient(circle,#81BEF7, #ffffff);
+}
+
+.background-radial-gray {
+  background-position: center center;
+  background: radial-gradient(circle,#BDBDBD, #ffffff);
+}
+
+.background-radial-gray:hover {
+  background-position: center center;
+  background: radial-gradient(circle,#A4A4A4, #ffffff);
+}
+
+.img-body-text{
+  margin-left: 100px;
+  margin-top: -70px;
+}
+
+.text-subtitle-contact{
+  color:#13baa9;
+  font-family: Champagne;
+  font-size:28px;
+  font-weight: bold;
+}
+
+.text-contact{
+  color:#231a4d;
+  font-family: Champagne;
+  font-size:18px;
+  font-weight: bold;
+}
+
+.text-form-contact{
+  color:#4d6b70;
+  font-family: Champagne;
+  font-size:16px;
+}
+
+.field-form{
+  border-color: #9ce2db;
+}
