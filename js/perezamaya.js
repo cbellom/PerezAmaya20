@@ -23,11 +23,11 @@ jQuery(function($)
                             'Reply-To': email
                         },
                         'subject': subject,
-                        "html": "<h1>Nombre: "+name +"</h1><br/><h2>Documento: "+tpid+" "+id+"</h2><br/><p>Telefono: "+phone+"<br/>Correo: "+email+"<br/><br/>Mensaje: "+msg+"</p>",
+                        "html": "<h1>Nombre: "+name +"</h1><br/><h2>Documento: "+tpid+" - "+id+"</h2><br/><p>Telefono: "+phone+"<br/>Correo: "+email+"<br/><br/>Mensaje: "+msg+"</p>",
                         'to': [
                             {
-                                'email': 'bottestdummymail@gmail.com',
-                                'name': 'bot mail',
+                                'email': 'info@perezamaya.com.co',
+                                'name': 'Info Perez Amaya',
                                 'type': 'to'
                             }]
                     }

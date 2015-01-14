@@ -114,7 +114,10 @@ body {
   font-family: Champagne;
   font-weight: bold;
 }
-
+.placeholder {
+  width:800px;
+  height:150px;
+}
 .circle-font{
   color: #ffffff;
   font-size: 20px;
