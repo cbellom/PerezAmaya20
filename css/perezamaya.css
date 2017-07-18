@@ -4,7 +4,6 @@
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
 }
 
 
@@ -23,6 +22,7 @@ body {
  */
 .navbar-fixed-top {
   border: 0;
+  position: relative;
 }
 
 /*
@@ -115,8 +115,7 @@ body {
   font-weight: bold;
 }
 .placeholder {
-  width:800px;
-  height:150px;
+  text-align:center;
 }
 .circle-font{
   color: #ffffff;
@@ -229,7 +228,15 @@ body {
 }
 
 .circle-5:hover{
-  background-color: #e1c471;
+  background-color: #3c563f;
+  color: #ffffff;
+}
+.circle-6{
+  background-color: #3c563f;
+}
+
+.circle-6:hover{
+  background-color: #68926d;
   color: #ffffff;
 }
 @font-face { font-family: Champagne; src: url('../fonts/Champagne%20&%20Limousines.ttf'); }
